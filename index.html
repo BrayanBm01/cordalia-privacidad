@@ -1,0 +1,563 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b26">
+  <meta name="description" content="Política de privacidad y tratamiento de datos personales de Cordalia, plataforma de turismo en Córdoba, Colombia.">
+  <title>Política de Privacidad | Cordalia</title>
+  <style>
+    :root {
+      --green: #173c32;
+      --green-dark: #102b26;
+      --mint: #d8f0d4;
+      --cream: #faf9f5;
+      --text: #263630;
+      --muted: #66736c;
+      --line: #e3e8e2;
+      --white: #fff;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 95px; }
+    body {
+      margin: 0;
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      color: var(--text);
+      background: var(--cream);
+      line-height: 1.75;
+    }
+    a { color: #21634e; }
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid #77a994;
+      outline-offset: 3px;
+    }
+    .topbar {
+      background: var(--green-dark);
+      color: white;
+      padding: 15px 24px;
+    }
+    .topbar-inner {
+      max-width: 1120px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand {
+      color: white;
+      text-decoration: none;
+      font-size: 1.3rem;
+      font-weight: 750;
+      letter-spacing: -.5px;
+    }
+    .brand span { color: var(--mint); }
+    .top-link {
+      color: white;
+      text-decoration: none;
+      font-size: .9rem;
+    }
+    .hero {
+      background: var(--green-dark);
+      color: white;
+      padding: 64px 24px 78px;
+    }
+    .hero-inner { max-width: 900px; margin: auto; }
+    .eyebrow {
+      color: var(--mint);
+      font-size: .77rem;
+      letter-spacing: 2px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 6vw, 4.2rem);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      max-width: 750px;
+      margin: 18px 0;
+    }
+    .hero p {
+      color: #d5e3dc;
+      max-width: 670px;
+      font-size: 1.08rem;
+    }
+    .meta {
+      margin-top: 28px;
+      font-size: .88rem;
+      color: #d5e3dc;
+    }
+    .layout {
+      max-width: 1120px;
+      margin: -25px auto 70px;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 255px minmax(0, 1fr);
+      gap: 30px;
+      align-items: start;
+    }
+    .toc, .content {
+      background: var(--white);
+      border: 1px solid var(--line);
+      border-radius: 18px;
+    }
+    .toc {
+      padding: 22px;
+      position: sticky;
+      top: 20px;
+    }
+    .toc h2 {
+      font-size: .95rem;
+      margin: 0 0 12px;
+    }
+    .toc a {
+      display: block;
+      text-decoration: none;
+      color: var(--muted);
+      font-size: .87rem;
+      padding: 6px 0;
+      line-height: 1.5;
+    }
+    .toc a:hover { color: var(--green); }
+    .content { padding: clamp(22px, 5vw, 48px); }
+    section { scroll-margin-top: 25px; }
+    section + section {
+      border-top: 1px solid var(--line);
+      margin-top: 30px;
+      padding-top: 26px;
+    }
+    h2 {
+      color: var(--green);
+      font-size: 1.4rem;
+      letter-spacing: -.4px;
+      line-height: 1.35;
+    }
+    h3 { font-size: 1.03rem; margin-top: 24px; }
+    p, li { font-size: .96rem; }
+    li { margin: 7px 0; }
+    .notice {
+      background: #f0f6ee;
+      border-left: 4px solid #7aa88b;
+      padding: 15px 18px;
+      border-radius: 5px 12px 12px 5px;
+      margin: 22px 0;
+      font-size: .92rem;
+    }
+    .contact {
+      background: var(--green);
+      color: white;
+      border-radius: 15px;
+      padding: 24px;
+      margin-top: 25px;
+    }
+    .contact h3 { margin-top: 0; }
+    .contact a { color: var(--mint); overflow-wrap: anywhere; }
+    .footer {
+      background: var(--green-dark);
+      color: #d5e3dc;
+      padding: 30px 24px;
+      text-align: center;
+      font-size: .85rem;
+    }
+    .footer a { color: var(--mint); }
+    @media (max-width: 760px) {
+      .layout { grid-template-columns: 1fr; margin-top: -20px; }
+      .toc { position: static; }
+      .hero { padding: 48px 24px 55px; }
+      .topbar { padding: 14px 18px; }
+      .top-link { font-size: .8rem; }
+    }
+    @media print {
+      .topbar, .toc, .footer { display: none; }
+      .hero { padding: 25px; background: white; color: black; }
+      .hero p, .meta, .eyebrow { color: black; }
+      .layout { display: block; margin: 0; }
+      .content { border: 0; }
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#inicio">cordalia<span>.</span></a>
+      <a class="top-link" href="#contacto">Contacto y privacidad ↗</a>
+    </div>
+  </header>
+
+  <div class="hero" id="inicio">
+    <div class="hero-inner">
+      <div class="eyebrow">Información legal · Cordalia</div>
+      <h1>Tu privacidad importa.</h1>
+      <p>
+        Queremos que descubras Córdoba con tranquilidad.
+        Aquí te explicamos cómo se pueden recopilar, utilizar,
+        conservar y proteger tus datos personales al utilizar
+        Cordalia y sus servicios turísticos.
+      </p>
+      <div class="meta">
+        Última actualización: 19 de octubre de 2026
+      </div>
+    </div>
+  </div>
+
+  <main class="layout">
+    <nav class="toc" aria-label="Contenido de la política">
+      <h2>En esta página</h2>
+      <a href="#responsable">1. Responsable</a>
+      <a href="#datos">2. Datos recopilados</a>
+      <a href="#finalidades">3. Finalidades</a>
+      <a href="#google">4. Inicio de sesión con Google</a>
+      <a href="#compartir">5. Compartir información</a>
+      <a href="#cookies">6. Cookies y tecnologías</a>
+      <a href="#seguridad">7. Seguridad y conservación</a>
+      <a href="#derechos">8. Tus derechos</a>
+      <a href="#menores">9. Menores de edad</a>
+      <a href="#cambios">10. Cambios en la política</a>
+      <a href="#contacto">11. Contacto y solicitudes</a>
+    </nav>
+
+    <article class="content">
+      <div class="notice">
+        Esta política debe leerse junto con las prácticas reales
+        de Cordalia. Antes de publicarla como documento definitivo,
+        completa los datos pendientes y verifica qué información
+        recoge tu aplicación y qué proveedores la procesan.
+      </div>
+
+      <section id="responsable">
+        <h2>1. Responsable del tratamiento</h2>
+        <p>
+          Esta política describe el tratamiento de datos personales
+          relacionado con Cordalia, una plataforma orientada a
+          facilitar el descubrimiento y la consulta de experiencias,
+          destinos y servicios turísticos en Córdoba, Colombia.
+        </p>
+        <p><strong>Responsable legal:</strong>
+          PENDIENTE: nombre completo de la persona o razón social
+          que opera Cordalia.</p>
+        <p><strong>Domicilio:</strong>
+          PENDIENTE: domicilio del responsable.</p>
+        <p><strong>Correo de privacidad:</strong>
+          PENDIENTE: correo oficial para solicitudes de datos.</p>
+        <p>
+          El responsable determinará las finalidades y los medios
+          del tratamiento de los datos que estén bajo su control,
+          de acuerdo con la normativa aplicable en Colombia.
+        </p>
+      </section>
+
+      <section id="datos">
+        <h2>2. ¿Qué datos podemos recopilar?</h2>
+        <p>
+          Dependiendo de las funciones que utilices y de la
+          información que decidas proporcionar, Cordalia podrá
+          tratar las siguientes categorías:
+        </p>
+        <ul>
+          <li>
+            <strong>Datos de cuenta:</strong> nombre, dirección
+            de correo electrónico, identificador de usuario y,
+            cuando corresponda, fotografía de perfil.
+          </li>
+          <li>
+            <strong>Datos de empresas y prestadores turísticos:</strong>
+            nombre comercial, información de contacto, descripción
+            de servicios, precios, promociones y contenido publicado.
+          </li>
+          <li>
+            <strong>Datos de actividad:</strong> destinos consultados,
+            favoritos, planes de viaje y preferencias que guardes,
+            si esas funciones están habilitadas.
+          </li>
+          <li>
+            <strong>Datos de reservas o solicitudes:</strong>
+            información necesaria para gestionar una reserva,
+            solicitud o comunicación, cuando el servicio lo permita.
+          </li>
+          <li>
+            <strong>Datos técnicos:</strong> información básica
+            del dispositivo, registros de errores y datos de uso
+            que los servicios utilizados puedan generar.
+          </li>
+          <li>
+            <strong>Comunicaciones:</strong> el contenido que envíes
+            al contactar con soporte o formular una solicitud.
+          </li>
+        </ul>
+        <p>
+          Solicitaremos los datos que resulten necesarios para
+          las funciones utilizadas. No debes enviar datos sensibles
+          o información de terceros salvo que exista una finalidad
+          legítima y una base jurídica adecuada.
+        </p>
+      </section>
+
+      <section id="finalidades">
+        <h2>3. ¿Para qué utilizamos tus datos?</h2>
+        <p>Según el servicio utilizado, podremos tratar los datos para:</p>
+        <ul>
+          <li>Crear, identificar y administrar cuentas de usuario.</li>
+          <li>Permitir el acceso a las funciones de Cordalia.</li>
+          <li>Mostrar destinos, actividades, negocios y ofertas turísticas.</li>
+          <li>Guardar preferencias y planes de viaje que decidas conservar.</li>
+          <li>Gestionar reservas, solicitudes o comunicaciones, cuando proceda.</li>
+          <li>Administrar perfiles comerciales y publicaciones de negocios.</li>
+          <li>Prevenir fraude, accesos no autorizados y usos indebidos.</li>
+          <li>Diagnosticar errores, mantener la plataforma y mejorar su funcionamiento.</li>
+          <li>Responder consultas, reclamos y solicitudes relacionadas con tus datos.</li>
+          <li>Cumplir obligaciones legales y atender requerimientos válidos de autoridades.</li>
+          <li>Enviar comunicaciones comerciales cuando corresponda y exista la autorización
+            o base jurídica necesaria.</li>
+        </ul>
+        <p>
+          No utilizaremos tus datos para finalidades incompatibles
+          con las informadas sin cumplir los requisitos legales
+          aplicables.
+        </p>
+      </section>
+
+      <section id="google">
+        <h2>4. Inicio de sesión con Google</h2>
+        <p>
+          Si decides iniciar sesión mediante Google, el proceso de
+          autenticación es gestionado en parte por Google. Según los
+          permisos solicitados y aceptados, Cordalia podrá recibir
+          información básica de tu perfil, como tu nombre, correo
+          electrónico, identificador de cuenta y fotografía, si está
+          disponible y autorizada.
+        </p>
+        <p>
+          Utilizaremos esos datos para identificar tu cuenta,
+          facilitar el inicio de sesión y prestar las funciones
+          solicitadas. No afirmamos acceder a otros datos de tu
+          cuenta de Google si no has autorizado los permisos
+          correspondientes.
+        </p>
+        <p>
+          El uso de Google Sign-In también está sujeto a las
+          condiciones y a la política de privacidad de Google:
+          <a href="https://policies.google.com/privacy"
+             target="_blank" rel="noopener noreferrer">
+            Política de privacidad de Google
+          </a>.
+        </p>
+        <p>
+          Puedes solicitar la eliminación de tu cuenta de Cordalia
+          y de los datos personales que corresponda eliminar a
+          través del canal indicado en esta política. La eliminación
+          de tu cuenta en Cordalia no elimina automáticamente tu
+          cuenta de Google.
+        </p>
+      </section>
+
+      <section id="compartir">
+        <h2>5. ¿Con quién podemos compartir los datos?</h2>
+        <p>
+          Cordalia no vende tus datos personales. Podremos
+          comunicarlos o permitir su tratamiento únicamente
+          cuando sea necesario para las finalidades informadas,
+          exista una base jurídica válida y se respeten las
+          garantías aplicables.
+        </p>
+        <ul>
+          <li>
+            <strong>Proveedores tecnológicos:</strong> servicios de
+            alojamiento, bases de datos, autenticación, seguridad
+            y mantenimiento, según los proveedores efectivamente
+            utilizados por Cordalia.
+          </li>
+          <li>
+            <strong>Empresas turísticas:</strong> los datos necesarios
+            para atender una reserva o solicitud que hayas decidido
+            realizar, cuando corresponda.
+          </li>
+          <li>
+            <strong>Autoridades competentes:</strong> cuando exista
+            una obligación legal o una orden válida.
+          </li>
+          <li>
+            <strong>Otros destinatarios:</strong> cuando hayas
+            autorizado la comunicación o exista otra base legal
+            aplicable.
+          </li>
+        </ul>
+        <p>
+          Si determinados proveedores procesan información desde
+          otros países, el responsable deberá verificar y cumplir
+          los requisitos aplicables a la transmisión o transferencia
+          internacional de datos personales.
+        </p>
+      </section>
+
+      <section id="cookies">
+        <h2>6. Cookies y tecnologías similares</h2>
+        <p>
+          El sitio web o los servicios integrados podrían utilizar
+          cookies, almacenamiento local u otras tecnologías para
+          mantener sesiones, recordar preferencias, proteger el
+          acceso y analizar el funcionamiento de la plataforma,
+          si esas tecnologías están implementadas.
+        </p>
+        <p>
+          Las tecnologías no esenciales deberán gestionarse de
+          acuerdo con las obligaciones legales aplicables. Puedes
+          revisar las opciones de privacidad de tu navegador.
+          Bloquear ciertas cookies o tecnologías puede afectar
+          algunas funciones.
+        </p>
+        <p>
+          Esta sección debe actualizarse si Cordalia incorpora
+          herramientas de analítica, publicidad, mapas o seguimiento
+          de terceros, indicando las herramientas y finalidades reales.
+        </p>
+      </section>
+
+      <section id="seguridad">
+        <h2>7. Seguridad y conservación de los datos</h2>
+        <p>
+          Adoptaremos medidas técnicas, administrativas y
+          organizativas razonables para proteger la información
+          contra pérdida, alteración, acceso no autorizado y
+          tratamiento indebido.
+        </p>
+        <p>
+          Conservaremos los datos durante el tiempo necesario
+          para prestar los servicios, cumplir las finalidades
+          informadas, atender obligaciones legales y resolver
+          controversias. Los plazos dependerán de la categoría
+          de datos y de las circunstancias de cada tratamiento.
+        </p>
+        <p>
+          Ningún sistema puede garantizar seguridad absoluta.
+          Si ocurre un incidente, se gestionará conforme a las
+          obligaciones legales que resulten aplicables.
+        </p>
+      </section>
+
+      <section id="derechos">
+        <h2>8. Tus derechos como titular</h2>
+        <p>
+          De conformidad con la normativa colombiana de protección
+          de datos personales, y sujeto a sus condiciones y
+          excepciones, podrás ejercer los derechos que te
+          correspondan, entre ellos:
+        </p>
+        <ul>
+          <li>Conocer, actualizar y rectificar tus datos personales.</li>
+          <li>Solicitar prueba de la autorización otorgada, cuando corresponda.</li>
+          <li>Preguntar por el uso que se ha dado a tus datos.</li>
+          <li>Presentar consultas o reclamos sobre su tratamiento.</li>
+          <li>
+            Solicitar la revocación de la autorización o la supresión
+            de datos cuando proceda legalmente.
+          </li>
+          <li>
+            Acceder gratuitamente a tus datos personales en los
+            términos establecidos por la ley.
+          </li>
+          <li>
+            Acudir ante la Superintendencia de Industria y Comercio
+            una vez agotado el trámite de consulta o reclamo ante
+            el responsable, cuando así lo exija la normativa.
+          </li>
+        </ul>
+        <p>
+          Para tramitar una solicitud, podremos pedir información
+          razonable para verificar tu identidad. No solicitaremos
+          tu contraseña de Google.
+        </p>
+        <p>
+          Atenderemos las consultas y los reclamos dentro de los
+          plazos legales aplicables. La supresión o revocación
+          puede estar sujeta a excepciones cuando exista un deber
+          legal o contractual de conservar cierta información.
+        </p>
+        <p>
+          Puedes obtener información oficial sobre protección de
+          datos en la
+          <a href="https://www.sic.gov.co/"
+             target="_blank" rel="noopener noreferrer">
+            Superintendencia de Industria y Comercio (SIC)
+          </a>.
+        </p>
+      </section>
+
+      <section id="menores">
+        <h2>9. Protección de menores de edad</h2>
+        <p>
+          Cordalia debe tratar los datos de niños, niñas y
+          adolescentes con respeto a sus derechos y a las
+          protecciones especiales previstas por la legislación
+          colombiana. Cuando una función involucre sus datos,
+          deberán verificarse los requisitos legales aplicables,
+          incluida la autorización de quien corresponda cuando
+          sea necesaria.
+        </p>
+        <p>
+          Si consideras que se han tratado datos de un menor de
+          manera inadecuada, contacta al responsable mediante
+          el canal indicado a continuación.
+        </p>
+      </section>
+
+      <section id="cambios">
+        <h2>10. Cambios en esta política</h2>
+        <p>
+          Podremos actualizar esta política cuando cambien las
+          funciones de Cordalia, las prácticas de tratamiento o
+          las obligaciones legales. Publicaremos la versión
+          actualizada en esta misma dirección e indicaremos la
+          fecha de actualización.
+        </p>
+        <p>
+          Cuando la ley lo exija, solicitaremos una nueva
+          autorización o informaremos los cambios por el medio
+          correspondiente.
+        </p>
+      </section>
+
+      <section id="contacto">
+        <h2>11. Contacto y solicitudes sobre tus datos</h2>
+        <p>
+          Si deseas consultar, actualizar, rectificar o solicitar
+          la supresión de tus datos personales, o presentar una
+          consulta o reclamo, utiliza el siguiente canal oficial.
+        </p>
+        <div class="contact">
+          <h3>Privacidad y protección de datos</h3>
+          <p><strong>Plataforma:</strong> Cordalia</p>
+          <p><strong>Responsable:</strong> PENDIENTE: nombre legal</p>
+          <p><strong>Correo:</strong>
+            PENDIENTE: correo oficial de privacidad</p>
+          <p>
+            En el asunto puedes escribir:
+            <em>Solicitud de protección de datos personales</em>.
+          </p>
+          <p>
+            Describe tu solicitud e incluye la información mínima
+            necesaria para identificar la cuenta. Evita enviar
+            contraseñas o documentos sensibles por correo sin
+            un procedimiento seguro.
+          </p>
+        </div>
+      </section>
+
+      <div class="notice">
+        Marco de referencia: Ley 1581 de 2012, sus normas
+        reglamentarias y las demás disposiciones colombianas
+        aplicables al tratamiento de datos personales.
+        La aplicación concreta depende de las circunstancias
+        y prácticas reales de Cordalia.
+      </div>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>© 2026 Cordalia · Turismo en Córdoba, Colombia</p>
+    <p><a href="#inicio">Volver al inicio ↑</a></p>
+  </footer>
+</body>
+</html>
